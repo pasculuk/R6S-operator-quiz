@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainbow 6 Seige Operator Quiz</title>
+    <script src="index.js"></script>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Rainbow 6 Seige Operator Survey</h1>
+
+   <div id="attackOrDefense">
+    <h2>Defense or attack operator?</h2>
+    <button onclick="defense()">Defense</button><button onclick="attack()">Attack</button>
+   </div>
+
+    <div id="defenseRole">
+        <h2>What role do you play on defense?</h2>
+        <button onclick="anchor()">Anchor</button><button onclick="roam()">Roam</button><button onclick="defenseFlex()">Flex</button>
+    </div>
+
+    <div id="attackRole">
+        <h2>What role do you play on attack?</h2>
+        <button onclick="entryFrag()">Entry Frag</button><button onclick="support()">Support</button><button onclick="attackFlex()">Flex</button>
+    </div>
+
+    <div id="soloQ">
+        <h2>Do you solo queue?</h2>
+        <button onclick="soloQYes()">Yes, I play alone</button><button onclick="soloQNo()">No, I play with others</button>
+    </div>
+
+    <div id="attackFragSolo">
+        <ul>
+            <li>Ash <img src="ash.png" alt="Ash Operator Logo"></li>
+            <li>Twitch<img src="twitch.png"></li>
+            <li>Iana<img src="iana.png"></li>
+            <li>Dokkaebi<img src="dokkaebi.png"></li>
+            <li>Grim<img src="grim.png"></li>
+            <li>Nøkk<img src="nokk.png"></li>
+        </ul>
+    </div>
+
+    <div id="attackSupportSolo">
+        <ul>
+            <li>Lion<img src="lion.png"></li>
+            <li>Finka<img src="finka.png"></li>
+            <li>Ace<img src="ace.png"></li>
+            <li>Black Beard<img src="blackbeard.png"></li>
+            <li>Gridlock<img src="gridlock.png"></li>
+            <li>Osa<img src="osa.png"></li>
+        </ul>
+    </div>
+
+    <div id="attackFlexSolo">
+        <ul>
+            <li>Striker<img src="striker.png"></li>
+            <li>Buck<img src="buck.png"></li>
+            <li>Deimos <img src="deimos.png"></li>
+            <li>Brava<img src="brava.png"></li>
+            <li>Ram<img src="ram.png"></li>
+            <li>Flores<img src="flores.png"></li>
+        </ul>
+    </div>
+
+    <div id="attackFragNotSolo">
+        <ul>
+            <li>Ash<img src="ash.png"></li>
+            <li>Ying<img src="ying.png"></li>
+            <li>IQ<img src="iq.png"></li>
+            <li>Iana<img src="iana.png"></li>
+            <li>Blitz<img src="blitz.png"></li>
+            <li>Amaru<img src="amaru.png"></li>
+            <li>Dokkaebi<img src="dokkaebi.png"></li>
+            <li>Grim<img src="grim.png"></li>
+        </ul>
+    </div>
+
+    <div id="attackSupportNotSolo">
+        <ul>
+            <li>Thermite<img src="thermite.png"></li>
+            <li>Thatcher<img src="thatcher.png"></li>
+            <li>Hibana<img src="hibana.png"></li>
+            <li>Montagne<img src="montagne.png"></li>
+            <li>Finka<img src="finka.png"></li>
+            <li>Maverick<img src="maverick.png"></li>
+        </ul>
+    </div>
+
+    <div id="attackFlexNotSolo">
+        <ul>
+            <li>Jackal<img src="jackal.png"></li>
+            <li>Nomad<img src="nomad.png"></li>
+            <li>Flores<img src="flores.png"></li>
+            <li>Capitão<img src="capitao.png"></li>
+            <li>Brava<img src="brava.png"></li>
+            <li>Ram<img src="ram.png"></li>
+            <li>Rauora<img src="rauora.png"></li>
+        </ul>
+    </div>
+
+    <div id="defenseAnchorSolo">
+        <ul>
+            <li>Rook<img src="rook.png"></li>
+            <li>Frost<img src="frost.png"></li>
+            <li>Mira<img src="mira.png"></li>
+            <li>Goyo<img src="goyo.png"></li>
+            <li>Melusi<img src="melusi.png"></li>
+            <li>Thunderbird<img src="thunderbird.png"></li>
+            <li>Azami<img src="azami.png"></li>
+        </ul>
+    </div>
+
+    <div id="defenseRoamSolo">
+        <ul>
+            <li>Pulse<img src="pulse.png"></li>
+            <li>Vigil<img src="vigil.png"></li>
+            <li>Warden<img src="warden.png"></li>
+            <li>Lesion<img src="lesion.png"></li>
+            <li>Kapkan<img src="kapkan.png"></li>
+
+    </div>
+
+    <div id="defenseFlexSolo">
+        <ul>
+            <li>Sentry<img src="sentry.png"></li>
+            <li>Mute<img src="mute.png"></li>
+            <li>Doc<img src="doc.png"></li>
+            <li>Bandit<img src="bandit.png"></li>
+            <li>Ela<img src="ela.png"></li>
+            <li>Fenrir<img src="fenrir.png"></li>
+        </ul>
+    </div>
+
+    <div id="defenseAnchorNotSolo">
+        <ul>
+            <li>Smoke<img src="smoke.png"></li>
+            <li>Castle<img src="castle.png"></li>
+            <li>Jager<img src="jager.png"></li>
+            <li>Mira<img src="mira.png"></li>
+            <li>Maestro<img src="maestro.png"></li>
+            <li>Tubarão<img src="tubarao.png"></li>
+            <li>Azami<img src="azami.png"></li>
+        </ul>
+    </div>
+
+    <div id="defenseRoamNotSolo">
+        <ul>
+            <li>Valkyrie<img src="valkyrie.png"></li>
+            <li>Vigil<img src="vigil.png"></li>
+            <li>Mozzie<img src="mozzie.png"></li>
+            <li>Oryx<img src="oryx.png"></li>
+            <li>Pulse<img src="pulse.png"></li>
+        </ul>
+    </div>
+
+    <div id="defenseFlexNotSolo">
+        <ul>
+            <li>Echo<img src="echo.png"></li>
+            <li>Kaid<img src="kaid.png"></li>
+            <li>Wamai<img src="wamai.png"></li>
+            <li>Aruni<img src="aruni.png"></li>
+            <li>Skopos<img src="skopos.png"></li>
+        </ul>
+    </div>
+
+    <div id="restartQuizButton">
+        <button onclick="reloadPage()">Retake Survey</button>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+div:not(#attackOrDefense) {
+    display: none;
+}
+
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(https://static-dm.ubisoft.com/siege/prod/7907369fa863844fc1ae432a9ca0e610.jpg);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Header Styling */
+h1 {
+    color: #ffffff;
+    font-size: 36px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+/* Section Titles */
+h2 {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+/* Button Styling */
+button {
+    background-color: #356eff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 5px;
+    cursor: pointer;
+    align-content: center;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button Hover Effects */
+button:hover {
+    background-color: #1f12d6;
+    transform: translateY(-3px);
+}
+
+
+/* Adding Space Between Different Sections */
+div {
+    margin-bottom: 40px;
+}
+
+/* Specific Style for the Solo Queue Section */
+#soloQ button {
+    width: 200px;
+}
+
+/* Flexbox Layout for the Attack and Defense Role Selection */
+#attackRole, #defenseRole {
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Section Styling for the Operator Lists */
+ul li {
+    align-items: center;
+    justify-content: start;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+ul {
+    display: flex;
+    justify-content: center; /* Center the container horizontally */
+    padding: 20px;
+}
+
+/* List Styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+    gap: 20px; /* Space between grid items */
+    width: 100%; /* Ensures the grid fills the width of the container */
+    max-width: 900px; /* Maximum width for the grid */
+}
+
+/* List Item Styling */
+ul li {
+    background-color: #f9f9f9;
+    border: 1px solid #f9f9f9;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: arial, sans-serif;
+    font: bold;
+    color: black;
+    display: flex;
+    flex-direction: column; /* Arrange image and text vertically */
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    text-align: center; /* Ensure text is centered */
+    height: 125px; /* Fixed height to make items uniform */
+    width:125px;
+}
+
+/* Image Styling */
+ul li img {
+    width: 80px; /* Size of the image */
+    height: 80px;
+    margin-bottom: 10px; /* Space between image and text */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    button {
+        padding: 10px 18px;
+        font-size: 14px;
+    }
+
+    ul li {
+        font-size: 16px;
+    }
+}
